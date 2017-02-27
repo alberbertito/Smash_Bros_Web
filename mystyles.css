@@ -1,0 +1,51 @@
+div
+{
+	text-align: center;
+}
+
+/*div.content
+{
+	text-align: center;
+}
+
+div.heading
+{
+	text-align: center;
+}
+
+div.footer
+{
+	text-align: center;
+}*/
+
+img
+{
+	display: block;
+    margin: auto; 
+}
+
+.logo
+{
+	width: 700px;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    background-color: #D0EAFF;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: top;
+}
+td {
+    background-color: #ECECEC;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    vertical-align: top;
