@@ -1,18 +1,15 @@
 div
 {
 	text-align: center;
-	/*background-image: images/logos.png;*/
 }
 
 body { 
-	/*background-image: url(images/logos.png);*/
 	background-color: #ECECEC;
 }
 
 menu {
     width: 97%;
     background-color: #99141F;
-	/*background-color: #111111;*/
     height: 50px;
 	font-family: arial black;
 	color: black;
@@ -121,7 +118,6 @@ p.tech_name {
 	text-align: left;
 	font-family: arial black;
 	font-size: 300%;
-	/*background-color: #d66666;*/
 	background: linear-gradient(-90deg, #ECECEC, #d66666);
 	color: #24212d;
 	position: relative;
@@ -130,7 +126,6 @@ p.tech_name {
 p.description {
 	text-align: left;
 	margin-left: 50px;
-	/*margin-top: 10px;*/
 	font-family: arial;
 	font-size: 150%;
 }
@@ -160,10 +155,6 @@ p.description {
 	height: 200px;
 }
 
-/*@keyframes appear {
-	opacity: 1;
-}*/
-
 img.c_footstool {
 	width: 400px;
 	opacity: 1;
@@ -182,12 +173,10 @@ img.c_pivot {
 
 .image_controller:hover .c_footstool{
   opacity: 0.3;
-  /*animation-name: appear;*/
 }
 
 .image_controller:hover .c_pivot{
   opacity: 0.3;
-  /*animation-name: appear;*/
 }
 
 .image_controller:hover .img_button {
