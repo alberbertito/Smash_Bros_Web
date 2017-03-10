@@ -3,7 +3,7 @@
 
                      
 
-			/*function invokeScript(divid)
+			function invokeScript(divid)
                         {
                             var scriptObj = divid.getElementsByTagName("SCRIPT");
                             var len = scriptObj.length;
@@ -23,10 +23,10 @@
                                     document.getElementsByTagName("HEAD")[0].appendChild(scriptTag);
                                 }
                             }
-                        }*/
+                        }
                         
                         
-			/*function nuevaConexion()
+			function nuevaConexion()
 			{
 				var xmlhttp=false;
 				 try {
@@ -49,7 +49,7 @@
 				 }
 				 return xmlhttp; 
 
-			}*/
+			}
 			
 			
 			function load_content(di, dat) {
@@ -58,28 +58,28 @@
 
             
 
-			/*function Cargar(url,capa)
+			function Cargar(url,capa)
 			{
 				
 				 var contenido = document.getElementById(capa);
-				 //var conexion = nuevaConexion();
-				 //conexion.open("GET", url,true);
-				 //conexion.onreadystatechange=function()
-				 //{ 
-					//if(conexion.readyState === 4)
-					//{
+				 var conexion = nuevaConexion();
+				 conexion.open("GET", url,true);
+				 conexion.onreadystatechange=function()
+				 { 
+					if(conexion.readyState === 4)
+					{
 						contenido.innerHTML = conexion.responseText;
                                                 invokeScript(document.getElementById(capa));
 
-					//}
-				//}; 
-				//conexion.send(null);
+					}
+				}; 
+				conexion.send(null);
                                 
-			} */
+			} 
                         
                          
 
-			/*function CargarForm(url,capa, valores)
+			function CargarForm(url,capa, valores)
 			{
 				
 				 var contenido = document.getElementById(capa);
@@ -95,9 +95,9 @@
 				}; 
 				conexion.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 				conexion.send(valores);
-			}*/
+			}
 
-			/*function ProcesarForm(formulario, url, capa)
+			function ProcesarForm(formulario, url, capa)
 			{
 				valores="";
 				for (i=0; i<formulario.elements.length;i++)
@@ -117,15 +117,15 @@
 				CargarForm(url,capa,valores);
 			
 
-			}*/
+			}
 
 			
-                        /*function cargaInicial()
+                        function cargaInicial()
                         {
                             
                             Cargar('menu.html','menu');
                             Cargar('inicial.html','capa1');
-                        }*/
+                        }
 
 
 	

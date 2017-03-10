@@ -2,31 +2,100 @@
 <html>
 
 	<head>
+		
 		<title>Super Smash Bros. Advanced Techniques</title>
-	</head>
 	
 	<link rel="stylesheet" type="text/css" href="mystyles.css">
 	<script type="text/javascript" src="functions.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js">
 	
 		/*$(document).ready( function() {
-			$("#exito").on("click", function() {
-				$("#content").load("content.html");
+			$("#foot").on("click", function() {
+				$("#content").load("Footstool.html");
+			});
+		});*/
+		
+		/*$(document).ready(function(){
+			$("foot").click(function(){
+				$("#content").load("Footstool.html");
+			});
+		});*/
+		
+		/*function load_Footstool() {
+			$("#content").html('<object style="min-width: 200%;  min-height: 200%;overflow:hidden; width:800px; height:800px;" data="Footstool.html"></object>');
+		}*/
+		
+		/*function getPageContents(callback,"Footstool.html",params) {
+			http=new XMLHttpRequest();
+			if(params!=null) {
+				http.open("POST", "Footstool.html", true);
+				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			} else {
+				http.open("GET", "Footstool.html", true);
+			}
+			http.onreadystatechange = function() {
+				if(http.readyState == 4 && http.status == 200) {
+					callback(http.responseText);
+				}
+			}
+			http.send(params);
+		}*/
+		
+		/*function loadXMLDoc("Footstool.html")
+    {
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                alert(xmlhttp.responseText);
+            }
+        }
+        xmlhttp.open("GET", "Footstool.html", false);
+        xmlhttp.send();
+    }*/
+		
+		//$( "#content" ).load( "Footstool.html" );
+		
+		/*$(document).ready( function() {
+			$("#foot").on("click", function() {
+				$("#content").load("Footstool.html");
+			});
+			/*$("#help").on("click", function() {
+				$("#target").load("../pages/theHelpPage.html");
+			});
+			$("#contact").on("click", function() {
+				$("#target").load("../pages/theContactPage.html");
 			});
 		});*/
 	
-		function load_menu() {
+		/*function load_menu() {
 		
 			document.getElementById("menu").innerHTML='<object type="text/html" data="menu.html" ></object>'; //'<object type="text/html" data="menu.html" ></object>'
 		}
 		
 		function load_heading() {
 			document.getElementById("heading").innerHTML='<object type="text/html" data="heading.html" ></object>';
-		}
+		}*/
+		
+		/*function CargarTitulado () {
+			Cargar(url, capa);
+            document.title='Smash Bros. Advanced Techniques ';
+		}*/
 	</script>
 	
-	<body> <!--  'menu', 'menu.html'     onload="load_menu();load_heading()"  -->
+	</head>
+	
+	<body style="overflow-x:auto;"> <!--    style="overflow:hidden; height:100%;"         'menu', 'menu.html'     onload="load_menu();load_heading()"    onload="<script>Cargar('menu.html', 'menu')</script>"    -->
 		
 		<div id="menu" class="menu"> 
 		
@@ -55,13 +124,13 @@
 		
 		<!-- <div id="topBar"> <a href ="#" id="exito" onclick="load_menu()"> HOME </a> </div> -->
 			
-		<div id="content" class="content">
+		<div id="content" class="content" style="overflow-x:auto;">
 		
 			<table id="techlist" class="techlist">
 			<tbody>
 				<tr>
 					<td>
-						<a class="techname" href="Footstool.html"><img src="images/footstool2_square.jpg" height="225" width="225"></br>Footstool Jump</a>
+						<a href="Footstool.html" id="foot" class="techname"><img src="images/footstool2_square.jpg" height="225" width="225"></br>Footstool Jump</a>
 					</td>
 				
 					<td>
@@ -117,17 +186,21 @@
                     <a href="AboutGame.html">Help</a>
                 </li>
                 <li>
-                    <a href="http://www.Facebook.com"><img class="social" width="50" height="50" src="images/Facebook.png"></a>
+                    <a href="http://www.Facebook.com"><p><img class="social" width="50" height="50" src="images/Facebook.png"></p></a>
                 </li>
                 <li>
-                    <a href="http://www.Twitter.com"><img class="social" width="50" height="50" src="images/twitter.png"></a>
+                    <a href="http://www.Twitter.com"><p><img class="social" width="50" height="50" src="images/twitter.png"></p></a>
                 </li>
                 
             </ul>
         </footer>
 
 		</div>
-
+		<script>
+		/*function load_Footstool() {
+			$("#content").html('<object data="Footstool.html"/>');
+		}*/
+		</script>
 	</body>
 	
 </html>
