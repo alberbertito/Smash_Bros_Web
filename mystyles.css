@@ -114,6 +114,14 @@ img.c_footstool{
 	width: 400px;
 }
 
+img.c_pivot{
+	height: 300px;
+}
+
+img.c_rar{
+	height: 350px;
+}
+
 p.tabletypes{
 	text-align: center;
 	font-family: arial;
@@ -121,6 +129,11 @@ p.tabletypes{
 }
 
 strongf {
+	font-size: 130%;
+	font-family: arial black;
+}
+
+strongdrop {
 	font-size: 130%;
 	font-family: arial black;
 }
