@@ -7,99 +7,16 @@
 	
 	<link rel="stylesheet" type="text/css" href="mystyles.css">
 	<script type="text/javascript" src="functions.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<script src="http://code.jquery.com/jquery-1.9.1.js">
-	
-		/*$(document).ready( function() {
-			$("#foot").on("click", function() {
-				$("#content").load("Footstool.html");
-			});
-		});*/
-		
-		/*$(document).ready(function(){
-			$("foot").click(function(){
-				$("#content").load("Footstool.html");
-			});
-		});*/
-		
-		/*function load_Footstool() {
-			$("#content").html('<object style="min-width: 200%;  min-height: 200%;overflow:hidden; width:800px; height:800px;" data="Footstool.html"></object>');
-		}*/
-		
-		/*function getPageContents(callback,"Footstool.html",params) {
-			http=new XMLHttpRequest();
-			if(params!=null) {
-				http.open("POST", "Footstool.html", true);
-				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			} else {
-				http.open("GET", "Footstool.html", true);
-			}
-			http.onreadystatechange = function() {
-				if(http.readyState == 4 && http.status == 200) {
-					callback(http.responseText);
-				}
-			}
-			http.send(params);
-		}*/
-		
-		/*function loadXMLDoc("Footstool.html")
-    {
-        if (window.XMLHttpRequest)
-        {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
-            xmlhttp=new XMLHttpRequest();
-        }
-        else
-        {// code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange=function()
-        {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-            {
-                alert(xmlhttp.responseText);
-            }
-        }
-        xmlhttp.open("GET", "Footstool.html", false);
-        xmlhttp.send();
-    }*/
-		
-		//$( "#content" ).load( "Footstool.html" );
-		
-		/*$(document).ready( function() {
-			$("#foot").on("click", function() {
-				$("#content").load("Footstool.html");
-			});
-			/*$("#help").on("click", function() {
-				$("#target").load("../pages/theHelpPage.html");
-			});
-			$("#contact").on("click", function() {
-				$("#target").load("../pages/theContactPage.html");
-			});
-		});*/
-	
-		/*function load_menu() {
-		
-			document.getElementById("menu").innerHTML='<object type="text/html" data="menu.html" ></object>'; //'<object type="text/html" data="menu.html" ></object>'
-		}
-		
-		function load_heading() {
-			document.getElementById("heading").innerHTML='<object type="text/html" data="heading.html" ></object>';
-		}*/
-		
-		/*function CargarTitulado () {
-			Cargar(url, capa);
-            document.title='Smash Bros. Advanced Techniques ';
-		}*/
-	</script>
 	
 	</head>
 	
-	<body style="overflow-x:auto;"> <!--    style="overflow:hidden; height:100%;"         'menu', 'menu.html'     onload="load_menu();load_heading()"    onload="<script>Cargar('menu.html', 'menu')</script>"    -->
+	<body  style="overflow-x:auto;">
 		
 		<div id="menu" class="menu"> 
 		
-			<img class="logo" src="images/smash_logo.png">
+		<img background="#111111" class="logo" src="images/smash_logo.png">
 			
 			<menu>
 			<ul>
@@ -107,13 +24,13 @@
                     <a href="index.html">Home</a>
                 </li>
 				<li>
-                    <a href="AboutGame.html">About the game</a>
+                    <a href="#" onclick="load_about_game()">About the game</a>
                 </li>
                 <li>
-                    <a href="Glossary.html">Glossary</a>
+                    <a href="#" onclick="load_glossary()">Glossary</a>
                 </li>
                 <li>
-                    <a href="AboutUs.html">About us</a>
+                    <a href="#" onclick="load_about_us()">About us</a>
                 </li>
                   
              
@@ -121,46 +38,44 @@
 			</menu>
 		
 		</div>
-		
-		<!-- <div id="topBar"> <a href ="#" id="exito" onclick="load_menu()"> HOME </a> </div> -->
 			
-		<div id="content" class="content" style="overflow-x:auto;">
+		<div id="content" class="content" style="overflow:auto;overflow-x:auto;">
 		
 			<table id="techlist" class="techlist">
 			<tbody>
 				<tr>
 					<td>
-						<a href="Footstool.html" id="foot" class="techname"><img src="images/footstool2_square.jpg" height="225" width="225"></br>Footstool Jump</a>
+						<a class="techname" href="#" onclick="load_Footstool()" ><img src="images/footstool2_square.jpg" height="225" width="225"></br>Footstool Jump</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="PerfectShield.html"><img src="images/perfect_shield1_square.jpg" height="225" width="225"></br>Perfect Shield</a>
+						<a class="techname" href="#" onclick="load_PerfectShield()"><img src="images/perfect_shield1_square.jpg" height="225" width="225"></br>Perfect Shield</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="Tech.html"><img src="images/tech4_square.jpg" height="225" width="225"></br>Tech</a>
+						<a class="techname" href="#" onclick="load_Tech()"><img src="images/tech4_square.jpg" height="225" width="225"></br>Tech</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="LedgeTrump.html"><img src="images/ledge_trump4_square.jpg" height="225" width="225"></br>Ledge Trump</a>
+						<a class="techname" href="#" onclick="load_LedgeTrump()"><img src="images/ledge_trump4_square.jpg" height="225" width="225"></br>Ledge Trump</a>
 					</td>
 				</tr>
 			
 				<tr>
 					<td>
-						<a class="techname" href="PerfectPivot.html"><img src="images/perfect_pivot6_square.png" height="225" width="225"></br>Perfect Pivot</a>
+						<a class="techname" href="#" onclick="load_PerfectPivot()"><img src="images/perfect_pivot6_square.png" height="225" width="225"></br>Perfect Pivot</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="RAR.html"><img src="images/rar_square.jpg" height="225" width="225"></br>Reverse Aerial Rush </br> (RAR)</a>
+						<a class="techname" href="#" onclick="load_RAR()"><img src="images/rar_square.jpg" height="225" width="225"></br>Reverse Aerial Rush </br> (RAR)</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="BReverse.html"><img src="images/b_reverse_square.jpg" height="225" width="225"></br>B Reverse</a>
+						<a class="techname" href="#" onclick="load_BReverse()"><img src="images/b_reverse_square.jpg" height="225" width="225"></br>B Reverse</a>
 					</td>
 				
 					<td>
-						<a class="techname" href="ShieldDrop.html"><img src="images/shield_drop_square.png" height="225" width="225"></br>Shield Drop</a>
+						<a class="techname" href="#" onclick="load_ShieldDrop()"><img src="images/shield_drop_square.png" height="225" width="225"></br>Shield Drop</a>
 					</td>
 				</tr>
             
@@ -198,7 +113,28 @@
 		</div>
 		<script>
 		/*function load_Footstool() {
-			$("#content").html('<object data="Footstool.html"/>');
+			$("#content").html('<object style="height:1750px; width:100%;" data="Footstool.html"></object>');
+		}
+		function load_PerfectShield() {
+			$("#content").html('<object style="height:1450px; width:100%;" data="PerfectShield.html"></object>');
+		}
+		function load_Tech() {
+			$("#content").html('<object style="height:1900px; width:100%;" data="Tech.html"></object>');
+		}
+		function load_LedgeTrump() {
+			$("#content").html('<object style="height:1440px; width:100%;" data="LedgeTrump.html"></object>');
+		}
+		function load_PerfectPivot() {
+			$("#content").html('<object style="height:1400px; width:100%;" data="PerfectPivot.html"></object>');
+		}
+		function load_RAR() {
+			$("#content").html('<object style="height:1500px; width:100%;" data="RAR.html"></object>');
+		}
+		function load_BReverse() {
+			$("#content").html('<object style="height:1570px; width:100%;" data="BReverse.html"></object>');
+		}
+		function load_ShieldDrop() {
+			$("#content").html('<object style="height:1400px; width:100%;" data="ShieldDrop.html"></object>');
 		}*/
 		</script>
 	</body>

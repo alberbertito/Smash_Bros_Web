@@ -177,7 +177,7 @@ img.c_pivot {
 	display: block;
 	transition: .5s ease;
 	backface-visibility: hidden;
-	height: 300px;
+	height: 270px;
 }
 
 .image_controller:hover .c_footstool{
@@ -213,12 +213,35 @@ p.tabletypes{
 	font-size: 150%;
 }
 
+.tablepivot {
+	text-align: center;
+}
+
+.tableb {
+	text-align: center;
+}
+
+.tablerar {
+	text-align: center;
+}
+
+.tableledge {
+	text-align:center;
+}
+
 strongf {
 	font-size: 130%;
 	font-family: arial black;
 }
 
 strongdrop {
+	font-size: 130%;
+	font-family: arial black;
+}
+
+strongpivot {
+	text-align: center;
+	float: center;
 	font-size: 130%;
 	font-family: arial black;
 }
