@@ -1,22 +1,85 @@
 div
 {
 	text-align: center;
+	background-image: images/logos.png;
 }
 
-/*div.content
-{
-	text-align: center;
+body { 
+	/*background-image: url(images/logos.png);*/
+	background-color: #ECECEC;
 }
 
-div.heading
-{
-	text-align: center;
+menu {
+    width: 97%;
+    background-color: #99141F;
+	/*background-color: #111111;*/
+    height: 50px;
+	font-family: arial;
 }
 
-div.footer
-{
+div.menu {
+	background-color: #111111;
+}
+
+menu ul {
+    width: 100%;
+    display: block;
+}
+
+menu ul li {
+    float: center;
+    height: 50px;
+    margin-right: 100px;
+    line-height: 50px;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+menu ul li a,
+menu ul li a:visited,
+menu ul li a:link {
+    display: inline-block;
+    text-decoration: none !important;
+	color: white;
+	font-size: 200%;
+}
+
+footer {
+    width: 97%;
+    background-color: #99141F;
+    height: 100px;
+	font-family: arial;
+}
+
+footer ul {
+    width: 100%;
+    display: block;
+}
+
+footer ul li {
+    float: left;
+    height: 100px;
+    margin-right: 100px;
+    line-height: 100px;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li a,
+footer ul li a:visited,
+footer ul li a:link {
+    display: inline-block;
+    text-decoration: none !important;
+	color: white;
+}
+
+footer img {
 	text-align: center;
-}*/
+	display: block;
+	margin: auto;
+}
 
 img
 {
@@ -29,11 +92,44 @@ img
 	width: 700px;
 }
 
+p.tech_name {
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	font-family: arial black;
+	font-size: 300%;
+	background-color: #AB3033;
+}
+
+p.description {
+	text-align: left;
+	margin-left: 50px;
+	/*margin-top: 10px;*/
+	font-family: arial;
+	font-size: 150%;
+}
+
+img.c_footstool{
+	width: 400px;
+}
+
+p.tabletypes{
+	text-align: center;
+	font-family: arial;
+	font-size: 150%;
+}
+
+strongf {
+	font-size: 130%;
+	font-family: arial black;
+}
+
 table {
     border-collapse: collapse;
     border-width: 2px;
     margin-left: auto;
     margin-right: auto;
+	font-family: arial;
 }
 th {
     background-color: #D0EAFF;
