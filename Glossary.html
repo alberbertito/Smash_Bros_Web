@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Super Smash Bros. Advanced Techniques</title>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="mystyles.css">
+	<script type="text/javascript" src="functions.js"></script>
+	
+	<script>
+	
+		/*$(document).ready( function() {
+			$("#exito").on("click", function() {
+				$("#content").load("content.html");
+			});
+		});*/
+	
+		function load_menu() {
+		
+			document.getElementById("menu").innerHTML='<object type="text/html" data="menu.html" ></object>'; //'<object type="text/html" data="menu.html" ></object>'
+		}
+		
+		function load_heading() {
+			document.getElementById("heading").innerHTML='<object type="text/html" data="heading.html" ></object>';
+		}
+	</script>
+	
+	<body> <!--  'menu', 'menu.html'     onload="load_menu();load_heading()"  -->
+		
+		<div id="menu" class="menu"> 
+		
+			<img class="logo" src="images/smash_logo.png">
+			
+			<menu>
+			<ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+				<li>
+                    <a href="AboutGame.html">About the game</a>
+                </li>
+                <li>
+                    <a href="Glossary.html">Glossary</a>
+                </li>
+                <li>
+                    <a href="AboutUs.html">About us</a>
+                </li>
+                  
+             
+            </ul>
+			</menu>
+		
+		</div>
+		
+		<!-- <div id="topBar"> <a href ="#" id="exito" onclick="load_menu()"> HOME </a> </div> -->
+			
+		<div id="content" class="content">
+			
+			<table id="glossary" class="glossary" style="width: 80%";>
+			<thead>
+				<tr>
+					<th style="font-weight: bold">TERM</th>
+					<th style="font-weight: bold">DEFINITION</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="term">Frame</td>
+					<td>The smallest unit of time in which an action can be inputted. 1 frame = 1/60 of a second.</td>
+				</tr>
+				<tr>
+					<td class="term">Hitbox Active</td>
+					<td>Frames during which the attack&#039;s hitboxes are active.</td>
+				</tr>
+				<tr>
+					<td class="term">FAF (First Actionable Frame)</td>
+					<td>First frame on which you can perform another move. This will be the animation&#039;s end or the IASA frame if the move has one.</td>
+				</tr>
+				<tr>
+					<td class="term">Base Damage (Base Dmg.)</td>
+					<td>Base damage values for each hitbox.</td>
+				</tr>
+				<tr>
+					<td class="term">Angle</td>
+					<td>Angle at which the opponent will be knocked away.</td>
+				</tr>
+				<tr>
+					<td class="term">BKB</td>
+					<td>Base knockback of the move.</td>
+				</tr>
+				<tr>
+					<td class="term">WBKB</td>
+					<td>Set knockback of the move (Determined by weight).</td>
+				</tr>
+				<tr>
+					<td class="term">KBG</td>
+					<td>Knockback growth of the move.</td>
+				</tr>
+				<tr>
+					<td class="term">Sweetspot</td>
+					<td>The strongest part of an attack.</td>
+				</tr>
+				<tr>
+					<td class="term">Landing Lag</td>
+					<td>Aerials only. Number of frames the character lags when they hits the ground during an aerial.</td>
+				</tr>
+				<tr>
+					<td class="term">Autocancel</td>
+					<td>Aerials only. Frames during which the character can land without the aerial move&#039;s landing lag. (They will instead suffer normal jump landing lag.)</td>
+				</tr>
+				<tr>
+					<td class="term">Hurtbox</td>
+					<td>The space around a character where hitboxes can inflict damage.</td>
+				</tr>
+				<tr>
+					<td class="term">Intangibility</td>
+					<td>Frames during which the character's hurtbox is unable to be interacted with.</td>
+				</tr>
+				<tr>
+					<td class="term">Invincibility</td>
+					<td>Frames during which the character will take no damage.</td>
+				</tr>
+				<tr>
+					<td class="term">Rehit Rate</td>
+					<td>If set to a number greater than 0, makes the hitbox hit again every X frames.</td>
+				</tr>
+				<tr>
+					<td class="term">Low Priority</td>
+					<td>Unable to beat other moves with the 9% rule, however can still lose to moves if they do 9% or more.</td>
+				</tr>
+				<tr>
+					<td class="term">Rebound</td>
+					<td>The animation that plays when two moves within 9% clank.</td>
+				</tr>
+				<tr>
+					<td class="term">Super Armor</td>
+					<td>Frames which a character will not flinch when attacked. Infinite.</td>
+				</tr>
+				<tr>
+					<td class="term">Heavy Armor</td>
+					<td>Frames which a character will not flinch when attacked. Finite and determined by knockback sustained.</td>
+				</tr>
+				<tr>
+					<td class="term">Damage Based Armor</td>
+					<td>Frames which a character will not flinch when attacked. Finite and determined by the damage of the move.</td>
+				</tr>
+				<tr>
+					<td class="term">Reflection</td>
+					<td>Reflection is the process of using a particular move to deflect incoming projectiles.</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		</div>
+		
+		<div id="footer" class="footer">
+		
+			<footer>
+            <ul>
+                <li>
+                    <img width="100" height="100" alt="Smash 4" src="images/Smash_Ball.png"></img>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="AboutUs.html">Contact us</a>
+                </li>
+				 <li>
+                    <a href="AboutGame.html">Help</a>
+                </li>
+                <li>
+                    <a href="http://www.Facebook.com"><img class="social" width="50" height="50" src="images/Facebook.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.Twitter.com"><img class="social" width="50" height="50" src="images/twitter.png"></a>
+                </li>
+                
+            </ul>
+        </footer>
+
+		
+		</div>
+
+	</body>
+	
+</html>

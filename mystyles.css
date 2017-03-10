@@ -1,7 +1,7 @@
 div
 {
 	text-align: center;
-	background-image: images/logos.png;
+	/*background-image: images/logos.png;*/
 }
 
 body { 
@@ -14,11 +14,16 @@ menu {
     background-color: #99141F;
 	/*background-color: #111111;*/
     height: 50px;
-	font-family: arial;
+	font-family: arial black;
+	color: black;
 }
 
 div.menu {
 	background-color: #111111;
+}
+
+img.logo_ball {
+	float: left;
 }
 
 menu ul {
@@ -41,8 +46,13 @@ menu ul li a:visited,
 menu ul li a:link {
     display: inline-block;
     text-decoration: none !important;
-	color: white;
+	color: #ECECEC;
 	font-size: 200%;
+	transition: all 0.2s ease-in-out;
+}
+
+menu ul li a:hover {
+	color: #b1b1b1;
 }
 
 footer {
@@ -81,25 +91,34 @@ footer img {
 	margin: auto;
 }
 
-img
-{
+a.social {
+	text-decoration: none;
+}
+
+a.techname {
+	text-decoration: none;
+	font-size: 130%;
+	font-family: arial black;
+	color: black;
+}
+
+img {
 	display: block;
     margin: auto; 
 }
 
-.logo
-{
+.logo {
 	width: 700px;
 }
 
 p.tech_name {
 	text-align: left;
-	margin-left: 50px;
-	margin-top: 50px;
 	font-family: arial black;
 	font-size: 300%;
-	background-color: #AB3033;
-	color: black;
+	/*background-color: #d66666;*/
+	background: linear-gradient(-90deg, #ECECEC, #d66666);
+	color: #24212d;
+	position: relative;
 }
 
 p.description {
@@ -110,8 +129,30 @@ p.description {
 	font-size: 150%;
 }
 
-img.c_footstool{
+.image_controller {
+	position: relative;
+}
+
+.button {
+	position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+
+img.c_footstool {
 	width: 400px;
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.c_footstool:hover {
+  opacity: 0.5;
+}
+
+.hidden_text {
+	position: relative;
 }
 
 img.c_pivot{
@@ -120,6 +161,11 @@ img.c_pivot{
 
 img.c_rar{
 	height: 350px;
+}
+
+img.social{
+	position: relative;
+    top: 20px;
 }
 
 p.tabletypes{
@@ -145,7 +191,19 @@ table {
     margin-right: auto;
 	font-family: arial;
 }
-th {
+table.glossary td{
+	border-style: solid;
+	border-radius: 5px;
+    border-width: 2px;
+	border-color: black;
+	font-family: arial;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+table.glossary th {
+	border-style: solid;
+	border-radius: 5px;
+    border-width: 2px;
     background-color: #D0EAFF;
     margin: 0;
     padding-bottom: 5px;
@@ -153,9 +211,36 @@ th {
     text-align: center;
     vertical-align: top;
 }
+table.techlist td {
+	/*border-style: solid;*/
+}
 td {
-    background-color: #ECECEC;
+    padding-bottom: 5px;
+    padding-left: 10px;
+	padding-right: 10px;
+    padding-top: 5px;
+    vertical-align: top;
+	transition: all 0.2s ease-in-out;
+}
+td:hover {
+    background-color: #bababa;
+	animation-name: hover_table;
+	animation-duration: 0.5s;
+}
+@keyframes hover_table {
+    from {background-color: #ECECEC;}
+    to {background-color: #bababa;}
+}
+
+td.glossary {
+	border-style: solid;
+	border-color: black;
+    background-color: #FFFFFF;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-top: 5px;
     vertical-align: top;
+}
+td.term{
+	font-weight: bold;
+}
